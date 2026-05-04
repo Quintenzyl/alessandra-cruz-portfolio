@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" type="image/x-icon" href="images/resumelogo.png">
+    <title>Alessandra Cruz's Portfolio</title>
+    <script src="scripts/modals.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <ul id="nav-links" tabindex="0">
+            <li><a href="#"><img src="images/resumelogo.png" class="small-logo" alt="A logo consisting of a black circle with the initials A and C arranged inside"/></a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+    <header id="hero">
+        <h1>Alessandra Cruz</h1>
+        <h2>Illustration | Graphic Design</h2>
+        <a href="#projects" class="button" aria-label="Scroll to projects section">View Projects</a>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                My name is Mercedes "Alessandra" Cruz and I am a software engineering student at the University of Montana and digital illustrator with 2+ years of professional experience. 
+                I currently provide illustration services on proposal through VGen. 
+                My style focuses on abstract and geometric design.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Here are my recent projects. Click on the card buttons for more details on each project.</p>
+            <ul id="project-container">
+                <li>
+                    <article class="project-card">
+                        <h3>Site Recreation</h3>
+                        <img src="images/recreationsiteThumbnail.png" alt="A thumbnail preview of project's live site" />
+                        <p>Static site recreated from prexisting site.</p>
+                        <span>HTML | CSS</span>                        
+                        <button id="recreation-btn" class="project-button" aria-label="View details on the Site Recreation Project">View Details</button>
+                    </article>
+                </li>
+                <li>
+                    <article class="project-card">
+                        <h3>Neocities Site</h3>
+                        <img src="images/neocitiessiteThumbnail.png" />
+                        <p>Personal Neocities site for sandboxing. Unfinished.</p>
+                        <span>HTML | CSS</span>                        
+                        <a id="neocities-btn" class="project-button" aria-label="View details on the Neocities Site Project">View Details</a>
+                    </article>
+                </li>
+                <li>
+                    <article class="project-card">
+                        <h3>Art Zine Pieces</h3>
+                        <img src="images/zinepiecesThumbnail.png" />
+                        <p>Two pieces for a collaborative fandom zine.</p>
+                        <span>Illustration</span>                        
+                        <a id="zine-btn" class="project-button" aria-label="View details on the Collaborative Zine Project">View Details</a>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><b>Coding Languages</b></li>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                </ul>
+                <li><b>Illustration Programs</b></li>
+                <ul>
+                    <li>Krita</li>
+                    <li>Adobe Photoshop (2017)</li>
+                </ul>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Below are accounts and platforms you can contact me through.</p>
+            <div class="contact-item">
+                <h3>Business Email</h3>
+                <p><b>mercedesalesscruz@gmail.com</b> | My business email. Use this email to contact me for general inquiries.</p>
+            </div>
+            <div class="contact-item">
+                <h3>GitHub</h3>
+                <p><b>github.com/Quintenzyl</b> | My GitHub page. </p>
+            </div>
+            <div class="contact-item">
+                <h3>VGen</h3>
+                <p><b>vgen.co/justyourloss</b> | My VGen page. If you are interested in my current illustration services, contact me on this platform. </p>
+            </div>
+        </section>
+        <section id="resume">
+            <h2>Resume</h2>
+            <p>Click the button below to access a PDF of my resume.</p>
+            <a href="https://docs.google.com/document/d/1B16EcyXUdbrDHrbyC25zpnuaFt_FBJTa/edit?usp=sharing&ouid=110620124992037760508&rtpof=true&sd=true" class="button">Download Resume</a>
+        </section>
+    </main>
+
+    <div id="recreation" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="margin-0">Site Recreation</h3>
+                <span id="recreation-close" class="close">&times;</span>                
+            </div>
+            <p>Recreated site referencing the flightrising.com homepage. Made for an assignment in CSCI181 at University of Montana using knowledge of HTML and CSS learned through the first few weeks of the semester. </p>
+            <a href="https://quintenzyl.github.io/cruz-csci181-p1/" class="button">View live site on GitHub Pages</a>
+        </div>
+    </div>
+    <div id="neocities" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="margin-0">Neocities Site</h3>
+                <span id="neocities-close" class="close">&times;</span>                
+            </div>
+            <p>
+                Created a personal neocities site that is meant for a growing collection of information through commonplacing techniques.
+                The goal of this site is to learn how to create a sort of multi-page encyclopedia and keep up with content management. </p>
+            <a href="https://dvorak.neocities.org/" class="button">View live site on Neocities</a>
+        </div>
+    </div>
+    <div id="zine" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="margin-0">Art Zine Pieces</h3>
+                <span id="zine-close" class="close">&times;</span>                
+            </div>
+            <p>
+                Illustrated two pieces for an online collaborative zine focused on showcasing characters made for a prexisting world in the ProjectMoon game series.
+                <br><br>
+                The main piece includes a two page spread mimicking fashion magazines with character design and flavor text.
+                The second piece is apart of a collection made within the zine based on tarot cards, with my card designed after the Judgement tarot card.
+                <br><br>
+                You can view my pieces under the pseodonym "The Post Office" on pages 22 (2 page spread) and 120 (Judgement, card 20).
+            </p>
+            <a href="https://pmoczine.itch.io/pmoczine" class="button">View full zine on itch.io</a>
+        </div>
+    </div>
+    <footer> @ 2026 Mercedes "Alessandra" Cruz </footer>
+</body>
+</html>
